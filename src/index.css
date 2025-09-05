@@ -9,34 +9,51 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 225 15% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 225 15% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 225 15% 20%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 240 73% 59%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 240 100% 82%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 240 6% 97%;
+    --secondary-foreground: 225 15% 20%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 240 6% 97%;
+    --muted-foreground: 225 8% 50%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 240 73% 59%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 240 73% 59%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Portfolio specific colors */
+    --hero-gradient: linear-gradient(135deg, hsl(240 73% 59%), hsl(260 73% 69%));
+    --section-bg: 240 6% 98%;
+    --card-hover: 240 20% 98%;
+    --text-primary: 225 15% 20%;
+    --text-secondary: 225 8% 50%;
+    --accent-orange: 25 95% 68%;
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 4px hsl(240 4% 16% / 0.04);
+    --shadow-md: 0 4px 12px hsl(240 4% 16% / 0.08);
+    --shadow-lg: 0 8px 32px hsl(240 4% 16% / 0.12);
+    --shadow-glow: 0 0 40px hsl(240 73% 59% / 0.15);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
