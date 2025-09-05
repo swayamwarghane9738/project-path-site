@@ -23,22 +23,22 @@ const Hero = () => {
             Swayam Warghane
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground mb-4">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-6">
             Full Stack Developer & UI/UX Enthusiast
           </p>
           
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
             Passionate about "vibe coding" — blending creativity with intuitive development using AI to rapidly prototype and build modern web experiences.
           </p>
           
-          <div className="flex flex-wrap gap-4 justify-center mb-8">
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <Mail className="w-4 h-4" />
-              <span className="text-sm md:text-base">swayamwarghane7218@gmail.com</span>
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
+            <div className="flex items-center justify-center gap-3 text-muted-foreground">
+              <Mail className="w-5 h-5 text-primary" />
+              <span className="text-base">swayamwarghane7218@gmail.com</span>
             </div>
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <Phone className="w-4 h-4" />
-              <span className="text-sm md:text-base">+91 7218551718</span>
+            <div className="flex items-center justify-center gap-3 text-muted-foreground">
+              <Phone className="w-5 h-5 text-primary" />
+              <span className="text-base">+91 7218551718</span>
             </div>
           </div>
           

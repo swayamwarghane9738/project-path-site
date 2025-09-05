@@ -46,80 +46,80 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-16">
             {/* Contact Information */}
-            <div className="space-y-8">
+            <div className="space-y-10">
               <div>
-                <h3 className="text-2xl font-bold text-foreground mb-6">Let's Connect</h3>
-                <p className="text-muted-foreground mb-8 leading-relaxed">
+                <h3 className="text-3xl font-bold text-foreground mb-6">Let's Connect</h3>
+                <p className="text-muted-foreground mb-8 leading-relaxed text-lg">
                   Whether you have a project in mind, want to collaborate, or just want to say hello, 
                   I'd love to hear from you. Feel free to reach out through any of the channels below.
                 </p>
               </div>
 
               <div className="space-y-6">
-                <div className="flex items-center gap-4 p-4 bg-card rounded-lg shadow-md">
-                  <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary-glow rounded-full flex items-center justify-center">
-                    <Mail className="w-6 h-6 text-primary-foreground" />
+                <div className="flex items-center gap-5 p-6 bg-card rounded-xl shadow-lg border border-border/50 hover:shadow-xl transition-all duration-300">
+                  <div className="w-14 h-14 bg-gradient-to-br from-primary to-primary-glow rounded-xl flex items-center justify-center shadow-md">
+                    <Mail className="w-7 h-7 text-primary-foreground" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground">Email</h4>
+                    <h4 className="font-bold text-foreground text-lg mb-1">Email</h4>
                     <p className="text-muted-foreground">swayamwarghane7218@gmail.com</p>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4 p-4 bg-card rounded-lg shadow-md">
-                  <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary-glow rounded-full flex items-center justify-center">
-                    <Phone className="w-6 h-6 text-primary-foreground" />
+                <div className="flex items-center gap-5 p-6 bg-card rounded-xl shadow-lg border border-border/50 hover:shadow-xl transition-all duration-300">
+                  <div className="w-14 h-14 bg-gradient-to-br from-primary to-primary-glow rounded-xl flex items-center justify-center shadow-md">
+                    <Phone className="w-7 h-7 text-primary-foreground" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground">Phone</h4>
+                    <h4 className="font-bold text-foreground text-lg mb-1">Phone</h4>
                     <p className="text-muted-foreground">+91 7218551718</p>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4 p-4 bg-card rounded-lg shadow-md">
-                  <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary-glow rounded-full flex items-center justify-center">
-                    <MapPin className="w-6 h-6 text-primary-foreground" />
+                <div className="flex items-center gap-5 p-6 bg-card rounded-xl shadow-lg border border-border/50 hover:shadow-xl transition-all duration-300">
+                  <div className="w-14 h-14 bg-gradient-to-br from-primary to-primary-glow rounded-xl flex items-center justify-center shadow-md">
+                    <MapPin className="w-7 h-7 text-primary-foreground" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground">Location</h4>
+                    <h4 className="font-bold text-foreground text-lg mb-1">Location</h4>
                     <p className="text-muted-foreground">Nagpur, Maharashtra, India</p>
                   </div>
                 </div>
               </div>
 
-              <div className="pt-6">
-                <h4 className="font-semibold text-foreground mb-4">Find me on</h4>
+              <div className="pt-4">
+                <h4 className="font-bold text-foreground mb-6 text-lg">Find me on</h4>
                 <div className="flex gap-4">
                   <a 
                     href="https://github.com/swayamwarghane" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="p-3 bg-card rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:scale-110"
+                    className="p-4 bg-card rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-border/50"
                   >
-                    <Github className="w-6 h-6 text-foreground" />
+                    <Github className="w-7 h-7 text-foreground" />
                   </a>
                   <a 
                     href="https://linkedin.com/in/swayamwarghane" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="p-3 bg-card rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:scale-110"
+                    className="p-4 bg-card rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-border/50"
                   >
-                    <Linkedin className="w-6 h-6 text-foreground" />
+                    <Linkedin className="w-7 h-7 text-foreground" />
                   </a>
                 </div>
               </div>
             </div>
 
             {/* Contact Form */}
-            <div className="bg-card rounded-xl shadow-lg p-8 border border-border/50">
-              <h3 className="text-2xl font-bold text-foreground mb-6">Send a Message</h3>
+            <div className="bg-card rounded-2xl shadow-xl p-10 border border-border/50">
+              <h3 className="text-3xl font-bold text-foreground mb-8">Send a Message</h3>
               
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
+              <form onSubmit={handleSubmit} className="space-y-8">
+                <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
+                    <label htmlFor="name" className="block text-base font-semibold text-foreground mb-3">
                       Name
                     </label>
                     <Input
@@ -130,11 +130,11 @@ const Contact = () => {
                       onChange={handleChange}
                       placeholder="Your name"
                       required
-                      className="w-full"
+                      className="w-full h-12 text-base"
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                    <label htmlFor="email" className="block text-base font-semibold text-foreground mb-3">
                       Email
                     </label>
                     <Input
@@ -145,13 +145,13 @@ const Contact = () => {
                       onChange={handleChange}
                       placeholder="your.email@example.com"
                       required
-                      className="w-full"
+                      className="w-full h-12 text-base"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
+                  <label htmlFor="subject" className="block text-base font-semibold text-foreground mb-3">
                     Subject
                   </label>
                   <Input
@@ -162,12 +162,12 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="What's this about?"
                     required
-                    className="w-full"
+                    className="w-full h-12 text-base"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
+                  <label htmlFor="message" className="block text-base font-semibold text-foreground mb-3">
                     Message
                   </label>
                   <Textarea
@@ -178,16 +178,16 @@ const Contact = () => {
                     placeholder="Tell me about your project or just say hello!"
                     required
                     rows={6}
-                    className="w-full resize-none"
+                    className="w-full resize-none text-base"
                   />
                 </div>
 
                 <Button 
                   type="submit" 
-                  className="w-full shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="w-full shadow-lg hover:shadow-xl transition-all duration-300 h-14 text-lg font-semibold"
                   size="lg"
                 >
-                  <Send className="w-4 h-4 mr-2" />
+                  <Send className="w-5 h-5 mr-3" />
                   Send Message
                 </Button>
               </form>

@@ -62,49 +62,50 @@ const Projects = () => {
           </div>
 
           {/* Featured Projects */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
             {featuredProjects.map((project, index) => (
               <div 
                 key={index}
-                className="group bg-card rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-border/50 hover:border-primary/20 hover:-translate-y-2"
+                className="group bg-card rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-border/50 hover:border-primary/30 hover:-translate-y-3"
               >
+                {/* Project Header */}
+                <div className="h-2 bg-gradient-to-r from-primary to-primary-glow"></div>
+                
                 <div className="p-8">
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary-glow rounded-lg flex items-center justify-center">
-                        <Code2 className="w-6 h-6 text-primary-foreground" />
-                      </div>
-                      <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full">
-                        {project.category}
-                      </span>
+                  <div className="flex items-start justify-between mb-6">
+                    <div className="w-14 h-14 bg-gradient-to-br from-primary to-primary-glow rounded-xl flex items-center justify-center shadow-lg">
+                      <Code2 className="w-7 h-7 text-primary-foreground" />
                     </div>
+                    <span className="px-4 py-2 bg-primary/10 text-primary text-sm font-semibold rounded-full border border-primary/20">
+                      {project.category}
+                    </span>
                   </div>
                   
-                  <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
+                  <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors duration-300">
                     {project.title}
                   </h3>
                   
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-muted-foreground mb-8 leading-relaxed text-base">
                     {project.description}
                   </p>
                   
-                  <div className="flex flex-wrap gap-2 mb-6">
+                  <div className="flex flex-wrap gap-2 mb-8">
                     {project.technologies.map((tech, techIndex) => (
                       <span 
                         key={techIndex}
-                        className="px-3 py-1 bg-muted text-muted-foreground text-xs rounded-full"
+                        className="px-3 py-1.5 bg-muted/70 text-muted-foreground text-xs font-medium rounded-lg border border-border/30"
                       >
                         {tech}
                       </span>
                     ))}
                   </div>
                   
-                  <div className="flex gap-3">
-                    <Button variant="outline" size="sm" className="flex-1">
+                  <div className="flex gap-4">
+                    <Button variant="outline" size="sm" className="flex-1 h-11 font-semibold">
                       <Github className="w-4 h-4 mr-2" />
                       Code
                     </Button>
-                    <Button size="sm" className="flex-1">
+                    <Button size="sm" className="flex-1 h-11 font-semibold">
                       <ExternalLink className="w-4 h-4 mr-2" />
                       Live Demo
                     </Button>
@@ -115,46 +116,54 @@ const Projects = () => {
           </div>
 
           {/* Other Projects */}
-          <div className="border-t border-border pt-16">
-            <h3 className="text-2xl font-bold text-center mb-8 text-foreground">
-              Other Projects
-            </h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="border-t border-border/30 pt-20">
+            <div className="text-center mb-12">
+              <h3 className="text-3xl font-bold text-foreground mb-4">
+                Other Projects
+              </h3>
+              <p className="text-muted-foreground">
+                Additional projects showcasing frontend development skills
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {otherProjects.map((project, index) => (
                 <div 
                   key={index}
-                  className="bg-card rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-6 border border-border/50 hover:border-primary/20"
+                  className="bg-card rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-8 border border-border/50 hover:border-primary/20 hover:-translate-y-1"
                 >
-                  <div className="flex items-center justify-between mb-3">
-                    <h4 className="text-lg font-semibold text-foreground">
+                  <div className="flex items-start justify-between mb-6">
+                    <h4 className="text-xl font-bold text-foreground leading-tight">
                       {project.title}
                     </h4>
-                    <span className="px-2 py-1 bg-muted text-muted-foreground text-xs rounded">
+                    <span className="px-3 py-1.5 bg-muted/70 text-muted-foreground text-xs font-medium rounded-lg border border-border/30 ml-3 flex-shrink-0">
                       {project.category}
                     </span>
                   </div>
                   
-                  <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
+                  <p className="text-muted-foreground mb-6 leading-relaxed">
                     {project.description}
                   </p>
                   
-                  <div className="flex flex-wrap gap-1 mb-4">
+                  <div className="flex flex-wrap gap-2 mb-6">
                     {project.technologies.map((tech, techIndex) => (
                       <span 
                         key={techIndex}
-                        className="px-2 py-1 bg-muted text-muted-foreground text-xs rounded"
+                        className="px-3 py-1 bg-muted/50 text-muted-foreground text-xs font-medium rounded-lg"
                       >
                         {tech}
                       </span>
                     ))}
                   </div>
                   
-                  <div className="flex gap-2">
-                    <Button variant="ghost" size="sm" className="p-2">
-                      <Github className="w-4 h-4" />
+                  <div className="flex gap-3">
+                    <Button variant="ghost" size="sm" className="flex-1 h-10">
+                      <Github className="w-4 h-4 mr-2" />
+                      Code
                     </Button>
-                    <Button variant="ghost" size="sm" className="p-2">
-                      <ExternalLink className="w-4 h-4" />
+                    <Button variant="ghost" size="sm" className="flex-1 h-10">
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Demo
                     </Button>
                   </div>
                 </div>
